@@ -12,7 +12,7 @@ int main()
         s += pow(-1, i) / pow((i + 1), 4);
     }
 
-    cout << s;
+    cout << "Сумма ряда: " << s << endl;
 
     return 0;
 }

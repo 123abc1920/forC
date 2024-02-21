@@ -13,7 +13,7 @@ int main()
         n++;
     }
 
-    cout << s;
+    cout << "Сумма ряда: " << s << endl;
 
     return 0;
 }
