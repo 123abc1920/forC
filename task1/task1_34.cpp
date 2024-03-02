@@ -4,10 +4,15 @@ using namespace std;
 
 int main()
 {
-    long double s = 0;
+    double s = 0, term = 1;
     int n = 0;
 
-    while (abs(pow(-1, n) / pow((n + 1), 4)) > 0.0001)
+    do
+    {
+
+    } while ();
+
+    while (abs(pow(-1, n) / pow((n + 1), 4)) > 1e-6)
     {
         s += pow(-1, n) / pow((n + 1), 4);
         n++;
