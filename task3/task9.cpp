@@ -43,13 +43,17 @@ void change(float **e, int h, int w)
     {
         h -= 1;
     }
+
+    /*??????????????????????????????????*/
+    float *a = new float(w);
     for (int i = 0; i < h; i += 2)
     {
-        float *a = new float(w);
         a = e[i];
         e[i] = e[i + 1];
         e[i + 1] = a;
     }
+    a = nullptr;
+    delete[] a;
 }
 
 int main()
@@ -61,6 +65,9 @@ int main()
     print(e, h, w);
     change(e, h, w);
     print(e, h, w);
+
+    // cout << endl;
+    // cout << *(*(e + 1) + 2);
 
     for (int i = 0; i < h; i++)
     {
